@@ -197,24 +197,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const themeAssets = {
     blue: {
-      logo: getCorrectPath("assets/images/logos/logo.png"),
-      favicon: getCorrectPath("assets/images/logos/logo.png"),
+      logo: "https://res.cloudinary.com/desq1cdmo/image/upload/v1741722469/logo_wgqrgy.png",
+      favicon:
+        "https://res.cloudinary.com/desq1cdmo/image/upload/v1741722469/logo_wgqrgy.png",
       colors: {
         primary: "#3eb7fe",
         secondary: "#0066cc",
       },
     },
     red: {
-      logo: getCorrectPath("assets/images/logos/logo.png"),
-      favicon: getCorrectPath("assets/images/logos/logo.png"),
+      logo: "https://res.cloudinary.com/desq1cdmo/image/upload/v1741722469/logo_wgqrgy.png",
+      favicon:
+        "https://res.cloudinary.com/desq1cdmo/image/upload/v1741722469/logo_wgqrgy.png",
       colors: {
         primary: "#ff1808",
         secondary: "#cc0000",
       },
     },
     yellow: {
-      logo: getCorrectPath("assets/images/logos/logo.png"),
-      favicon: getCorrectPath("assets/images/logos/logo.png"),
+      logo: "https://res.cloudinary.com/desq1cdmo/image/upload/v1741722469/logo_wgqrgy.png",
+      favicon:
+        "https://res.cloudinary.com/desq1cdmo/image/upload/v1741722469/logo_wgqrgy.png",
       colors: {
         primary: "#fdc206",
         secondary: "#ffa500",
