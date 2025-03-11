@@ -176,11 +176,15 @@ window.addEventListener("scroll", () => {
 
 const getCorrectPath = (path) => {
   const currentPath = window.location.pathname;
-  // Jika berada di subfolder (about, contact, dll)
-  if (currentPath.split("/").length > 2) {
-    return "../" + path;
+  const pathDepth = currentPath.split("/").filter(Boolean).length;
+
+  // If we're in root
+  if (pathDepth <= 1) {
+    return path;
   }
-  return path;
+
+  // If we're in a subdirectory
+  return "../".repeat(pathDepth - 1) + path;
 };
 
 // Theme switcher functionality
@@ -193,24 +197,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const themeAssets = {
     blue: {
-      logo: "/assets/images/logos/logo.png",
-      favicon: "/assets/images/logos/logo.png",
+      logo: getCorrectPath("assets/images/logos/logo.png"),
+      favicon: getCorrectPath("assets/images/logos/logo.png"),
       colors: {
         primary: "#3eb7fe",
         secondary: "#0066cc",
       },
     },
     red: {
-      logo: "/assets/images/logos/logo.png",
-      favicon: "/assets/images/logos/logo.png",
+      logo: getCorrectPath("assets/images/logos/logo.png"),
+      favicon: getCorrectPath("assets/images/logos/logo.png"),
       colors: {
         primary: "#ff1808",
         secondary: "#cc0000",
       },
     },
     yellow: {
-      logo: "/assets/images/logos/logo.png",
-      favicon: "/assets/images/logos/logo.png",
+      logo: getCorrectPath("assets/images/logos/logo.png"),
+      favicon: getCorrectPath("assets/images/logos/logo.png"),
       colors: {
         primary: "#fdc206",
         secondary: "#ffa500",
