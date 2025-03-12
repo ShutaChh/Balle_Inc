@@ -65,20 +65,23 @@ function createEventCard(event, isPastEvent = false) {
   return `
         <div class="${isPastEvent ? "past-event-card" : "event-card"}">
             <div class="event-background">
-                <img src="${event.image}" 
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNlZWUiLz48L3N2Zz4="
+                     data-src="${event.image}" 
                      alt="Background" 
-                     class="blurred-image"
-                     loading="lazy"
-                     width="100%"
-                     height="auto">
-            </div>
-            <div class="${isPastEvent ? "past-card-link" : "card-link"}">
-                <img src="${event.image}" 
-                     alt="${event.title}" 
-                     class="${isPastEvent ? "past-event-image" : "event-image"}"
-                     loading="lazy"
+                     class="blurred-image lazy"
                      width="100%"
                      height="250">
+            </div>
+            <div class="${isPastEvent ? "past-card-link" : "card-link"}">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNlZWUiLz48L3N2Zz4="
+                     data-src="${event.image}" 
+                     alt="${event.title}" 
+                     class="${
+                       isPastEvent ? "past-event-image" : "event-image"
+                     } lazy"
+                     width="100%"
+                     height="250"
+                     onload="this.classList.add('loaded')">
                 <div class="${
                   isPastEvent ? "past-event-details" : "event-details"
                 }">
@@ -104,6 +107,31 @@ function createEventCard(event, isPastEvent = false) {
         </div>
     `;
 }
+
+// Add lazy loading implementation
+document.addEventListener("DOMContentLoaded", function () {
+  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function (lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  }
+});
 
 // Function to populate event grids
 function populateEventGrids(events) {

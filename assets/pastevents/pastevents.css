@@ -43,6 +43,9 @@ body.dark-mode .past-event-date,
   border: 2px solid #c3c6ce;
   position: relative;
   transition: all 0.5s ease;
+  transform: translateZ(0);
+  will-change: transform;
+  contain: content;
 }
 
 .past-event-card:not(:hover) {
@@ -75,16 +78,48 @@ body.dark-mode .past-event-date,
   will-change: transform;
   transform: translateZ(0);
   backface-visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
 }
 
+.past-event-image.loaded {
+  opacity: 1;
+}
+
+.event-image {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  will-change: opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.event-image.loaded {
+  opacity: 1;
+}
+
+.lazy {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.lazy.loaded {
+  opacity: 1;
+}
+
+/* Progressive loading effect */
 .blurred-image {
   width: 100%;
   height: auto;
   opacity: 0.1;
-  filter: blur(5px);
+  filter: blur(20px);
   transition: opacity 0.3s ease, filter 0.3s ease;
   will-change: opacity, filter;
   transform: translateZ(0);
+}
+
+.blurred-image.loaded {
+  filter: blur(0);
 }
 
 /* Add loading animation */
@@ -103,6 +138,28 @@ body.dark-mode .past-event-date,
 .past-event-image:not([loaded]) {
   animation: imageLoadingPulse 1.5s ease infinite;
   background: #f0f0f0;
+}
+
+/* Add loading placeholder */
+.past-event-image:not(.loaded),
+.event-image:not(.loaded) {
+  background: linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 0.6) 0%,
+    rgba(240, 240, 240, 0.8) 50%,
+    rgba(240, 240, 240, 0.6) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .past-event-details {
