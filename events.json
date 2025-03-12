@@ -1,137 +1,11 @@
 [
   {
-    "title": "Alun - Alun Indonesia",
-    "date": "17-08-2024",
-    "time": "09:00 - 11:00",
-    "location": "Alun - Alun Indonesia",
-    "description": "Pertunjukan musik keroncong di Alun-alun pusat kota dengan nuansa Indonesia yang kental",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501933/Alun-Alun_Indonesia_tyffg5.jpg",
-    "website": ""
-  },
-  {
-    "title": "Balai Kota",
-    "date": "18-08-2024",
-    "time": "10:00 - 12:00",
-    "location": "Balai Kota",
-    "description": "Penampilan spesial keroncong di Balai Kota Jakarta dalam rangka acara kota",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501554/Balai_Kota_ou7o1d.jpg",
-    "website": ""
-  },
-  {
-    "title": "GKI Kwitang",
-    "date": "20-08-2024",
-    "time": "08:30 - 10:30",
-    "location": "GKI Kwitang",
-    "description": "Pertunjukan musik keroncong spesial di Gereja Kristen Indonesia Kwitang dalam rangka perayaan ibadah minggu",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501937/GKI_Kwitang_ewucc8.jpg",
-    "website": ""
-  },
-  {
-    "title": "GPIB Tugu",
-    "date": "21-08-2024",
-    "time": "15:00 - 17:00",
-    "location": "GPIB Tugu",
-    "description": "Kolaborasi musik keroncong dalam ibadah di GPIB Tugu",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501712/GPIB_Tugu_kpcupx.jpg",
-    "website": ""
-  },
-  {
-    "title": "PPSB JAKSEL",
-    "date": "14-08-2024",
-    "time": "19:00 - 21:00",
-    "location": "Jakarta Selatan",
-    "description": "Acara khusus keroncong di Pusat Pembinaan Seni Budaya Jakarta Selatan",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741500699/IMG_5300_farmg2.jpg",
-    "website": ""
-  },
-  {
-    "title": "IPC",
-    "date": "22-08-2024",
-    "time": "14:00 - 16:00",
-    "location": "IPC",
-    "description": "Pertunjukan keroncong di Indonesia Port Corporation",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501869/IPC_f6hgyi.jpg",
-    "website": ""
-  },
-  {
-    "title": "Lebaran Di Jakarta",
-    "date": "23-08-2024",
-    "time": "16:00 - 18:00",
-    "location": "Jakarta",
-    "description": "Perayaan Lebaran dengan alunan musik keroncong di Jakarta",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501937/Lebaran_Di_Jakarta_a278lx.jpg",
-    "website": ""
-  },
-  {
-    "title": "Museum Benyamin Sueb",
-    "date": "14-08-2024",
-    "time": "09:30 - 11:30",
-    "location": "Museum Benyamin Sueb",
-    "description": "Penampilan keroncong spesial mengenang sang legenda Benyamin Sueb",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741500485/Balle%20Keroncong%20Event/Museum%20Benjamin%20Sueb.jpg",
-    "website": ""
-  },
-  {
-    "title": "Museum Bahari",
-    "date": "24-08-2024",
-    "time": "10:30 - 12:30",
-    "location": "Museum Bahari",
-    "description": "Pertunjukan keroncong di Museum Bahari dengan nuansa sejarah maritim",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501329/Museum_Bahari_jtfhqm.jpg",
-    "website": ""
-  },
-  {
-    "title": "Nuansa Religi Fest",
-    "date": "25-08-2024",
-    "time": "18:00 - 20:00",
-    "location": "Nuansa Religi Fest",
-    "description": "Festival keroncong bernuansa religi dengan berbagai kolaborasi",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501448/Nuansa_Religi_Fest_dlkiys.jpg",
-    "website": ""
-  },
-  {
-    "title": "PRJ",
-    "date": "14-08-2024",
-    "time": "17:00 - 19:00",
-    "location": "PRJ",
-    "description": "Penampilan keroncong di Pekan Raya Jakarta",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501789/PRJ_ulbik9.jpg",
-    "website": ""
-  },
-  {
-    "title": "PTSP",
-    "date": "26-08-2024",
-    "time": "13:00 - 15:00",
-    "location": "PTSP",
-    "description": "Pertunjukan keroncong di Pelayanan Terpadu Satu Pintu",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501882/PTSP_lpo55z.jpg",
-    "website": ""
-  },
-  {
-    "title": "Pelataran Senayan",
-    "date": "27-08-2024",
-    "time": "15:30 - 17:30",
-    "location": "Senayan",
-    "description": "Konser keroncong terbuka di area Senayan",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501512/Pelataran_Senayan_l1dike.jpg",
-    "website": ""
-  },
-  {
-    "title": "Tepi Barat",
-    "date": "28-08-2024",
-    "time": "11:00 - 13:00",
-    "location": "Tepi Barat",
-    "description": "Pertunjukan keroncong di kawasan Tepi Barat Jakarta",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501500/Tepi_Barat_bfwtdv.jpg",
-    "website": ""
-  },
-  {
-    "title": "Wedding Cilandak",
-    "date": "29-08-2024",
-    "time": "16:30 - 18:30",
-    "location": "Cilandak",
-    "description": "Penampilan keroncong spesial untuk acara pernikahan di Cilandak",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501339/Wedding_Cilandak_ofevgo.jpg",
+    "title": "Wedding Vans",
+    "date": "31-08-2024",
+    "time": "18:30 - 20:30",
+    "location": "Wedding Vans",
+    "description": "Hiburan keroncong untuk acara pernikahan Vans",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501403/Wedding_Vans_r9qrky.jpg",
     "website": ""
   },
   {
@@ -144,12 +18,138 @@
     "website": ""
   },
   {
-    "title": "Wedding Vans",
-    "date": "31-08-2024",
-    "time": "18:30 - 20:30",
-    "location": "Wedding Vans",
-    "description": "Hiburan keroncong untuk acara pernikahan Vans",
-    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501403/Wedding_Vans_r9qrky.jpg",
+    "title": "Wedding Cilandak",
+    "date": "29-08-2024",
+    "time": "16:30 - 18:30",
+    "location": "Cilandak",
+    "description": "Penampilan keroncong spesial untuk acara pernikahan di Cilandak",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501339/Wedding_Cilandak_ofevgo.jpg",
+    "website": ""
+  },
+  {
+    "title": "Tepi Barat",
+    "date": "28-08-2024",
+    "time": "11:00 - 13:00",
+    "location": "Tepi Barat",
+    "description": "Pertunjukan keroncong di kawasan Tepi Barat Jakarta",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501500/Tepi_Barat_bfwtdv.jpg",
+    "website": ""
+  },
+  {
+    "title": "Pelataran Senayan",
+    "date": "27-08-2024",
+    "time": "15:30 - 17:30",
+    "location": "Senayan",
+    "description": "Konser keroncong terbuka di area Senayan",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501512/Pelataran_Senayan_l1dike.jpg",
+    "website": ""
+  },
+  {
+    "title": "PTSP",
+    "date": "26-08-2024",
+    "time": "13:00 - 15:00",
+    "location": "PTSP",
+    "description": "Pertunjukan keroncong di Pelayanan Terpadu Satu Pintu",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501882/PTSP_lpo55z.jpg",
+    "website": ""
+  },
+  {
+    "title": "Nuansa Religi Fest",
+    "date": "25-08-2024",
+    "time": "18:00 - 20:00",
+    "location": "Nuansa Religi Fest",
+    "description": "Festival keroncong bernuansa religi dengan berbagai kolaborasi",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501448/Nuansa_Religi_Fest_dlkiys.jpg",
+    "website": ""
+  },
+  {
+    "title": "Museum Bahari",
+    "date": "24-08-2024",
+    "time": "10:30 - 12:30",
+    "location": "Museum Bahari",
+    "description": "Pertunjukan keroncong di Museum Bahari dengan nuansa sejarah maritim",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501329/Museum_Bahari_jtfhqm.jpg",
+    "website": ""
+  },
+  {
+    "title": "Lebaran Di Jakarta",
+    "date": "23-08-2024",
+    "time": "16:00 - 18:00",
+    "location": "Jakarta",
+    "description": "Perayaan Lebaran dengan alunan musik keroncong di Jakarta",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501937/Lebaran_Di_Jakarta_a278lx.jpg",
+    "website": ""
+  },
+  {
+    "title": "IPC",
+    "date": "22-08-2024",
+    "time": "14:00 - 16:00",
+    "location": "IPC",
+    "description": "Pertunjukan keroncong di Indonesia Port Corporation",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501869/IPC_f6hgyi.jpg",
+    "website": ""
+  },
+  {
+    "title": "GPIB Tugu",
+    "date": "21-08-2024",
+    "time": "15:00 - 17:00",
+    "location": "GPIB Tugu",
+    "description": "Kolaborasi musik keroncong dalam ibadah di GPIB Tugu",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501712/GPIB_Tugu_kpcupx.jpg",
+    "website": ""
+  },
+  {
+    "title": "GKI Kwitang",
+    "date": "20-08-2024",
+    "time": "08:30 - 10:30",
+    "location": "GKI Kwitang",
+    "description": "Pertunjukan musik keroncong spesial di Gereja Kristen Indonesia Kwitang dalam rangka perayaan ibadah minggu",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501937/GKI_Kwitang_ewucc8.jpg",
+    "website": ""
+  },
+  {
+    "title": "Balai Kota",
+    "date": "18-08-2024",
+    "time": "10:00 - 12:00",
+    "location": "Balai Kota",
+    "description": "Penampilan spesial keroncong di Balai Kota Jakarta dalam rangka acara kota",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501554/Balai_Kota_ou7o1d.jpg",
+    "website": ""
+  },
+  {
+    "title": "Alun - Alun Indonesia",
+    "date": "17-08-2024",
+    "time": "09:00 - 11:00",
+    "location": "Alun - Alun Indonesia",
+    "description": "Pertunjukan musik keroncong di Alun-alun pusat kota dengan nuansa Indonesia yang kental",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501933/Alun-Alun_Indonesia_tyffg5.jpg",
+    "website": ""
+  },
+  {
+    "title": "PPSB JAKSEL",
+    "date": "14-08-2024",
+    "time": "19:00 - 21:00",
+    "location": "Jakarta Selatan",
+    "description": "Acara khusus keroncong di Pusat Pembinaan Seni Budaya Jakarta Selatan",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741500699/IMG_5300_farmg2.jpg",
+    "website": ""
+  },
+  {
+    "title": "Museum Benyamin Sueb",
+    "date": "14-08-2024",
+    "time": "09:30 - 11:30",
+    "location": "Museum Benyamin Sueb",
+    "description": "Penampilan keroncong spesial mengenang sang legenda Benyamin Sueb",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741500485/Balle%20Keroncong%20Event/Museum%20Benjamin%20Sueb.jpg",
+    "website": ""
+  },
+  {
+    "title": "PRJ",
+    "date": "14-08-2024",
+    "time": "17:00 - 19:00",
+    "location": "PRJ",
+    "description": "Penampilan keroncong di Pekan Raya Jakarta",
+    "image": "https://res.cloudinary.com/desq1cdmo/image/upload/v1741501789/PRJ_ulbik9.jpg",
     "website": ""
   }
 ]
