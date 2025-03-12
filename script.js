@@ -65,22 +65,20 @@ function createEventCard(event, isPastEvent = false) {
   return `
         <div class="${isPastEvent ? "past-event-card" : "event-card"}">
             <div class="event-background">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNlZWUiLz48L3N2Zz4="
-                     data-src="${event.image}" 
+                <img src="${event.image}" 
                      alt="Background" 
-                     class="blurred-image lazy"
-                     width="100%"
-                     height="250">
-            </div>
-            <div class="${isPastEvent ? "past-card-link" : "card-link"}">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNlZWUiLz48L3N2Zz4="
-                     data-src="${event.image}" 
-                     alt="${event.title}" 
-                     class="${
-                       isPastEvent ? "past-event-image" : "event-image"
-                     } lazy"
+                     class="blurred-image"
                      width="100%"
                      height="250"
+                     loading="lazy">
+            </div>
+            <div class="${isPastEvent ? "past-card-link" : "card-link"}">
+                <img src="${event.image}" 
+                     alt="${event.title}" 
+                     class="${isPastEvent ? "past-event-image" : "event-image"}"
+                     width="100%"
+                     height="250"
+                     loading="lazy"
                      onload="this.classList.add('loaded')">
                 <div class="${
                   isPastEvent ? "past-event-details" : "event-details"

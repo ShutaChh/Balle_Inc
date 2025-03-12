@@ -73,13 +73,15 @@ body.dark-mode .past-event-date,
   padding: 1rem;
   width: 100%;
   height: 250px;
-  object-fit: scale-down;
+  object-fit: contain;
   border-radius: 10px;
   will-change: transform;
   transform: translateZ(0);
   backface-visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  display: block;
+  margin: 0 auto;
 }
 
 .past-event-image.loaded {
@@ -87,11 +89,16 @@ body.dark-mode .past-event-date,
 }
 
 .event-image {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
   opacity: 0;
-  transition: opacity 0.3s ease-in;
+  transition: all 0.3s ease-in;
   will-change: opacity;
   transform: translateZ(0);
   backface-visibility: hidden;
+  display: block;
+  margin: 0 auto;
 }
 
 .event-image.loaded {
