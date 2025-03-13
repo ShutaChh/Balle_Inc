@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Balle inc.</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <form class="login-form" action="auth.php" method="POST">
+        <div class="form-header">
+          <img
+            src="https://res.cloudinary.com/desq1cdmo/image/upload/v1741722469/logo_wgqrgy.png"
+            alt="Logo" />
+          <h2>Login to Balle inc.</h2>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required />
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <div class="form-footer">
+          <p>
+            Don't have an account?
+            <a href="../register/register.html">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

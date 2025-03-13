@@ -26,28 +26,62 @@
 
       // Form validation
       forms.forEach((form) => {
-        form.addEventListener("submit", function (e) {
-          const password = form.querySelector('input[type="password"]');
-          const username = form.querySelector('input[name="username"]');
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const password = form.querySelector('input[name="password"]');
+          const confirmPassword = form.querySelector(
+            'input[name="confirm_password"]'
+          );
+          const username = form.querySelector('input[name="fullname"]');
           let hasError = false;
 
           if (password && password.value.length < 8) {
-            e.preventDefault();
             showError("Password harus minimal 8 karakter");
             hasError = true;
           }
 
+          if (
+            password &&
+            confirmPassword &&
+            password.value !== confirmPassword.value
+          ) {
+            showError("Password tidak cocok");
+            hasError = true;
+          }
+
           if (username && username.value.length < 4) {
-            e.preventDefault();
-            showError("Username harus minimal 4 karakter");
+            showError("Nama harus minimal 4 karakter");
             hasError = true;
           }
 
           if (!hasError) {
-            const submitBtn = form.querySelector('input[type="submit"]');
+            const submitBtn = form.querySelector('button[type="submit"]');
             if (submitBtn) {
-              submitBtn.value = "Loading...";
+              submitBtn.textContent = "Loading...";
               submitBtn.disabled = true;
+            }
+
+            try {
+              const formData = new FormData(form);
+              const response = await fetch(form.action, {
+                method: "POST",
+                body: formData,
+              });
+
+              const redirectUrl = response.url;
+              if (redirectUrl.includes("success")) {
+                window.location.href = redirectUrl;
+              } else {
+                const text = await response.text();
+                showError(text || "Registration failed");
+              }
+            } catch (error) {
+              showError("An error occurred. Please try again.");
+            } finally {
+              if (submitBtn) {
+                submitBtn.textContent = "Register";
+                submitBtn.disabled = false;
+              }
             }
           }
         });
